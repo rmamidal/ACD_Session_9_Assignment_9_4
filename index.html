@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap Navigation, forms and glyphicons demo | Session 9 Assignment 9.4</title>
+    
+    <!-- Including jquery and bootstrap javascript files-->
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src='bootstrap/js/bootstrap.min.js'></script>
+    
+    <!-- Including Bootstrap css file-->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet"/>
+
+    <!-- Custome css-->
+    <style type="text/css">
+    .container {
+      width: auto;
+      max-width: 680px;
+      padding: 0 15px;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 60px;
+      background-color: #f5f5f5;
+    }
+
+    .text-muted {
+      margin: 20px 0;
+    }
+    </style>
+
+  </head>
+  <body>
+  <!-- Menu Navigation -->
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <ul class="nav navbar-nav ">
+        <li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+        <li><a href="#">Abouts</a></li>
+        <li class="active"><a href="#"> Blog</a></li>
+      </ul>
+    </div>
+  </nav><!-- Navigation -->
+  
+  <!--  Blog page with registration form-->
+  <div class="container">
+  	<h1>Bootstrap Registration form</h1>
+    <form name='registationForm' action="#">
+      <div class="form-group">
+        <label for="textFirstName">First Name</label>
+        <input type="text" class="form-control" id="textFirstName" placeholder="First Name">
+      </div>
+      <div class="form-group">
+        <label for="textLastName">Last Name </label>
+        <input type="text" class="form-control" id="textLastName" placeholder="Last Name">
+      </div>
+      <div class="form-group">
+        <label for="emailEmailId">Email address</label>
+        <input type="email" class="form-control" id="emailEmailId" placeholder="Enter Email Address">
+      </div>
+      <div class="form-group">
+        <label for="passPassword">Password</label>
+        <input type="password" class="form-control" id="passPassword" placeholder="Enter password">
+      </div>
+      <div class="form-group">
+        <label for="passConfirmPassword">Confirm Password</label>
+        <input type="password" class="form-control" id="passConfirmPassword" placeholder="Enter Confirm password">
+      </div>
+      <div class="form-group">
+        <button name="editForm" class="btn btn-primary" required="true" data-toggle="modal" data-target="#myModal"> Edit</button>
+      </div>
+    </form><!-- Registration Form -->
+  </div><!-- .container-->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted"><span class="glyphicon glyphicon-copyright-mark"></span> Acadgild @Raj 2017</p>
+    </div>
+  </footer>
+  </body>
+</html>
+ 
